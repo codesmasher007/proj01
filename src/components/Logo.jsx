@@ -1,0 +1,29 @@
+import React from "react";
+
+const Logo = ({ color = "#022183", className = "" }) => {
+  return (
+    <div className={`logo ${className}`}>
+      <svg
+        width="36"
+        height="36"
+        viewBox="0 0 36 36"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19.2 9C14.7 9 11.1 12.6 11.1 17.1C11.1 21.6 14.7 25.2 19.2 25.2C23.7 25.2 27.3 21.6 27.3 17.1C27.3 12.6 23.7 9 19.2 9Z"
+          fill={color}
+        />
+        <path
+          d="M28.8 7.5C24.3 7.5 20.7 11.1 20.7 15.6C20.7 20.1 24.3 23.7 28.8 23.7C33.3 23.7 36.9 20.1 36.9 15.6C36.9 11.1 33.3 7.5 28.8 7.5ZM28.8 21.3C25.65 21.3 23.1 18.75 23.1 15.6C23.1 12.45 25.65 9.9 28.8 9.9C31.95 9.9 34.5 12.45 34.5 15.6C34.5 18.75 31.95 21.3 28.8 21.3Z"
+          fill={color}
+        />
+      </svg>
+      <span className="logo-text" style={{ color }}>
+        MobulsEngine
+      </span>
+    </div>
+  );
+};
+
+export default Logo;
